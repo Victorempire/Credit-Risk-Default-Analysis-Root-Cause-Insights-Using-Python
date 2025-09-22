@@ -1,9 +1,8 @@
 # Credit-Risk-Default-Analysis:Root Cause Insights Using Python
 # Overview
-This project focuses on Credit Risk Default Analysis, leveraging real-world inspired 
-lending data to investigate the root causes of customer defaults. In lending institution, 
-defaults directly impact profitability and long-term sustainability, making it critical to identify which customer characteristics,
-products,or behaviors are most strongly linked to default risk.
+This project analyzes **credit risk defaults** using a dataset of 25,000 loan events across multiple branches, loan products, and officers. The analysis identifies key drivers of default, showing that lower credit scores, certain loan products (particularly SME and Personal Loans), and specific branches and officers are linked to higher default rates. Losses are concentrated, with a small number of defaults contributing disproportionately to total financial loss, highlighting areas that require attention.
+Tests and analyses confirm these patterns: defaulters have significantly lower credit scores than non-defaulters, and defaults are strongly associated with branch, product type, and loan officer. Pareto analysis shows that just a few products account for most of the losses, revealing that risk is not evenly spread but concentrated in certain segments. These insights help focus efforts where they will have the greatest impact.
+Based on the findings, the project recommends strengthening credit checks for borrowers with low scores, monitoring high-risk products and branches more closely, and reviewing lending policies to reduce exposure to large losses. Regular tracking of repayment trends and early identification of unusual patterns can also help prevent defaults. By taking these actions, financial institutions can reduce losses, improve product performance, and manage overall risk more effectively.
 # Introduction
 In today’s financial industry, lending institutions face one of their greatest challenges: managing the risk of loan defaults.
 When customers fail to repay their loans, organizations not only lose revenue but also suffer from operational inefficiencies and strained resources.
@@ -49,3 +48,15 @@ H₁: Loan product type is significantly associated with default rates.
 H₀: There is no significant association between loan officers and default rates.
 
 H₁: Loan officers are significantly associated with default rates.
+
+### The dataset contains the following key features:
+
+Customer Features → Unique customer IDs and credit scores, allowing us to profile borrowers.
+
+Loan Features → Product type, loan amount, and repayment outcomes, which show how lending decisions perform across customer segments.
+
+Operational Features → Branches and officers responsible for loan disbursement, enabling performance tracking and accountability.
+
+Performance Metrics → Financial losses (loss_ngn) linked to defaults, helping quantify the business risk.
+
+Time Features → Loan dates and derived weekdays, which allow anomaly detection and time-based trend analysis.
