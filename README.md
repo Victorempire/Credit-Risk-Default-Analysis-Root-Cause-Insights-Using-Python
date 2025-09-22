@@ -1,4 +1,4 @@
-# Credit-Risk-Default-Analysis:Root Cause Insights Using Python
+# Credit Risk Default Analysis:Root Cause Insights Using Python
 # Overview
 This project analyzes **credit risk defaults** using a dataset of 25,000 loan events across multiple branches, loan products, and officers. The analysis identifies key drivers of default, showing that lower credit scores, certain loan products (particularly SME and Personal Loans), and specific branches and officers are linked to higher default rates. Losses are concentrated, with a small number of defaults contributing disproportionately to total financial loss, highlighting areas that require attention.
 Tests and analyses confirm these patterns: defaulters have significantly lower credit scores than non-defaulters, and defaults are strongly associated with branch, product type, and loan officer. Pareto analysis shows that just a few products account for most of the losses, revealing that risk is not evenly spread but concentrated in certain segments. These insights help focus efforts where they will have the greatest impact.
